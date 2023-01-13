@@ -1,4 +1,4 @@
-import 'package:app1/widgets/TitleBar.dart';
+import 'package:app1/widgets/Components.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,34 +13,28 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  int _counter = 0;
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+  String bar = "App Bar";
+  int count = 0;
+
+  void add() => setState(
+        () {
+          count++;
+        },
+      );
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(primarySwatch: Colors.green),
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text("AppBar"),
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                '$_counter',
-              )
-            ],
-          ),
-        ),
+        appBar: Bar(bar),
+        body: Main(count),
         floatingActionButton: FloatingActionButton(
-          onPressed: _incrementCounter,
+          onPressed: () => add(),
+          child: const Icon(Icons.add),
         ),
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
