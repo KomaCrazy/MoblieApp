@@ -1,8 +1,8 @@
-import 'package:app1/widgets/Components.dart';
+import 'package:app1/widgets/Componets.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -13,27 +13,11 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String bar = "App Bar";
-  int count = 0;
-
-  void add() => setState(
-        () {
-          count++;
-        },
-      );
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.green),
-      home: Scaffold(
-        appBar: Bar(bar),
-        body: Main(count),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () => add(),
-          child: const Icon(Icons.add),
-        ),
-      ),
+      theme: ThemeData(canvasColor: Colors.blue[100]),
+      home: PageMain(),
       debugShowCheckedModeBanner: false,
     );
   }
