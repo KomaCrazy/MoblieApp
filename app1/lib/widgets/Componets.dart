@@ -7,6 +7,11 @@ class PageMain extends StatefulWidget {
   State<PageMain> createState() => _PageMainState();
 }
 
+ TextStyle StyleSub() {
+  return const TextStyle(
+      fontSize: 26, fontWeight: FontWeight.w800, color: Colors.white);
+}
+
 class _PageMainState extends State<PageMain> {
   @override
   Widget build(BuildContext context) {
@@ -25,10 +30,7 @@ class _PageMainState extends State<PageMain> {
                 padding: EdgeInsets.all(0),
                 child: Text(
                   "Build apps for any Screen",
-                  style: TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white),
+                  style: 
                 ),
               ),
             ),
@@ -48,8 +50,12 @@ class TopicSub extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.all(10),
-      child: Center(child: Text("Flutter transforms the app development process. Build,"),)
-
+      child: Center(
+        child: Column(
+          children: [
+            Text("123"),
+          ],
+        ),
       ),
     );
   }
