@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "946265384533",
+    "firebase_url": "https://webkoma-ccf4f-default-rtdb.firebaseio.com",
+    "project_id": "webkoma-ccf4f",
+    "storage_bucket": "webkoma-ccf4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946265384533:android:cda30834b4a30e54de16dc",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946265384533-tosto26nf3j97nri2euc3vcf6vdk4sat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDey5P7jbVgr76mc2QL19i7L1J0ZlxT0Sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946265384533-tosto26nf3j97nri2euc3vcf6vdk4sat.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
