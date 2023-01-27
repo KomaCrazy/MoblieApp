@@ -7,7 +7,7 @@ class PageMain extends StatefulWidget {
   State<PageMain> createState() => _PageMainState();
 }
 
- TextStyle StyleSub() {
+TextStyle StyleSub() {
   return const TextStyle(
       fontSize: 26, fontWeight: FontWeight.w800, color: Colors.white);
 }
@@ -28,10 +28,7 @@ class _PageMainState extends State<PageMain> {
             child: Center(
               child: Padding(
                 padding: EdgeInsets.all(0),
-                child: Text(
-                  "Build apps for any Screen",
-                  style: 
-                ),
+                child: Text("Build apps for any Screen"),
               ),
             ),
           ),
@@ -49,10 +46,10 @@ class TopicSub extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       child: Center(
         child: Column(
-          children: [
+          children: const [
             Text("123"),
           ],
         ),
