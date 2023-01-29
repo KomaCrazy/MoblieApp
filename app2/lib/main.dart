@@ -1,10 +1,8 @@
 import 'dart:convert';
 
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:test1/widgets/componets.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
-
 import 'firebase_options.dart';
 
 void main() {
@@ -19,6 +17,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  List<SetData> list = [];
+
   @override
   void initState() {
     // TODO: implement initState
@@ -28,28 +28,28 @@ class _MyAppState extends State<MyApp> {
 
   void initFirebase() async {
     await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-    );
-    readFirebase();
+        options: DefaultFirebaseOptions.currentPlatform);
+    print("initFirebase");
+    firebaseRead();
   }
 
-  List<Info> list = [];
-
-  void readFirebase() async {
+  void firebaseRead() async {
     DatabaseReference starCountRef = FirebaseDatabase.instance.ref('beta');
     starCountRef.onValue.listen((DatabaseEvent event) {
       final data = event.snapshot.value;
       Map<String, dynamic> map = json.decode(json.encode(data));
+      list = [];
       map.forEach((key, value) {
         list.add(
-          Info(
-            id: value["id"],
-            name: value["name"],
-            active: value["active"],
-          ),
+          SetData(
+              id: value["id"], name: value["name"], active: value["active"]),
         );
       });
-      List.generate(list.length, (index) => print("${list[index].id}"));
+      print("${list.length}");
+      list.forEach((el) {
+        print("${el.name}");
+      });
+      // setState(() {});
     });
   }
 
@@ -57,23 +57,19 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          appBar: appbar("Test"),
-          body: Center(
-            child: Column(
-                children: List.generate(
-                    list.length, (index) => Text("${list[index].name}"))),
-          )),
+        appBar: AppBar(),
+        body: Column(
+          children: List.generate(
+              list.length, (index) => Text("${list[index].name}")),
+        ),
+      ),
     );
   }
 }
 
-class Info {
+class SetData {
   int id;
   String name;
   bool active;
-  Info({
-    required this.id,
-    required this.name,
-    required this.active,
-  });
+  SetData({required this.id, required this.name, required this.active});
 }

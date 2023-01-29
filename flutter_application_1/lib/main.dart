@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:math';
-
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -47,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void readfirebase() async {
-    DatabaseReference starCountRef = FirebaseDatabase.instance.ref('data');
+    DatabaseReference starCountRef = FirebaseDatabase.instance.ref('beta');
     starCountRef.onValue.listen((DatabaseEvent event) {
       final data = event.snapshot.value;
       Map<String, dynamic> map = json.decode(json.encode(data));
@@ -56,6 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
       map.forEach(
         (key, value) {
           if (key != "b") {
+            print("${value}");
             list.add(
               Info(
                   name: value["name"],
@@ -66,6 +66,9 @@ class _MyHomePageState extends State<MyHomePage> {
           }
         },
       );
+      list.forEach((element) {
+        print("$element");
+      });
       setState(() {});
     });
   }

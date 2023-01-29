@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "791092931709",
+    "firebase_url": "https://komacrazy-d80a6-default-rtdb.firebaseio.com",
+    "project_id": "komacrazy-d80a6",
+    "storage_bucket": "komacrazy-d80a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791092931709:android:90341ce162d2cb13099514",
+        "android_client_info": {
+          "package_name": "com.example.app2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791092931709-9vi5r5bkg92kdir38k532fn32e6l64li.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFZVDLwg4zIaejH_IR5vIu7yCaq6AF-vo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791092931709-9vi5r5bkg92kdir38k532fn32e6l64li.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "791092931709-uftd3uh60mfpi5sdnqipsq9312790bjc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.app2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
