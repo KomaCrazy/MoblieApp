@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>791092931709-f6p68mjup7m2sn2a6q7bgot9bct5l3f1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.791092931709-f6p68mjup7m2sn2a6q7bgot9bct5l3f1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBH81XePqCl2MYZLjrX1ua5Nn9c60EtKF4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>791092931709</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.ui1</string>
+	<key>PROJECT_ID</key>
+	<string>komacrazy-d80a6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>komacrazy-d80a6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:791092931709:ios:29aa519e81767fa7099514</string>
+	<key>DATABASE_URL</key>
+	<string>https://komacrazy-d80a6-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
