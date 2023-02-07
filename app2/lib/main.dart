@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 void main() {
   runApp(MyApp());
 }
-
+class 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
@@ -20,6 +20,7 @@ class _MyAppState extends State<MyApp> {
 
   void call() async {
     final res = await http.get(Uri.parse('http://127.0.0.1:5000/read'));
+    
     if (res.statusCode == 200) {
       list = infoDbFromJson(res.body);
       setState(() {});
