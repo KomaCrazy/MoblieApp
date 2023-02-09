@@ -22,7 +22,7 @@ def LoginDB(raw):
     for db in __db.execute(_cli):
         print(db)
         _db =  SetDB(db[0],db[1],db[2])
-        return {"id":_db.id,"user":_db.user,"password":_db.password}
+        return {"id":_db.id,"user":str(_db.user),"password":str(_db.password)}
     
     
     

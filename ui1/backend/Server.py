@@ -13,7 +13,7 @@ def PageRead():
 
 @app.route('/login')
 def PageLogin():
-    return jsonify(LoginDB(req.form))
+    return jsonify(LoginDB(req.args))
 
 if __name__ == "__main__":
     app.run()
