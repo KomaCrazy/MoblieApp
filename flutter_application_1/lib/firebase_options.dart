@@ -44,44 +44,44 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAK3ENN4kmzrTt2_E2qQp9c49V3fdlBa3g',
-    appId: '1:946265384533:web:63e37a7124c95cfbde16dc',
-    messagingSenderId: '946265384533',
-    projectId: 'webkoma-ccf4f',
-    authDomain: 'webkoma-ccf4f.firebaseapp.com',
-    databaseURL: 'https://webkoma-ccf4f-default-rtdb.firebaseio.com',
-    storageBucket: 'webkoma-ccf4f.appspot.com',
-    measurementId: 'G-2GE7CGGBNV',
+    apiKey: 'AIzaSyC33JBiUks7mbSx0JzhjDlF7woXenNwGwc',
+    appId: '1:791092931709:web:0f8c0367baed0f92099514',
+    messagingSenderId: '791092931709',
+    projectId: 'komacrazy-d80a6',
+    authDomain: 'komacrazy-d80a6.firebaseapp.com',
+    databaseURL: 'https://komacrazy-d80a6-default-rtdb.firebaseio.com',
+    storageBucket: 'komacrazy-d80a6.appspot.com',
+    measurementId: 'G-61BQMMDNHY',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDey5P7jbVgr76mc2QL19i7L1J0ZlxT0Sw',
-    appId: '1:946265384533:android:cda30834b4a30e54de16dc',
-    messagingSenderId: '946265384533',
-    projectId: 'webkoma-ccf4f',
-    databaseURL: 'https://webkoma-ccf4f-default-rtdb.firebaseio.com',
-    storageBucket: 'webkoma-ccf4f.appspot.com',
+    apiKey: 'AIzaSyAFZVDLwg4zIaejH_IR5vIu7yCaq6AF-vo',
+    appId: '1:791092931709:android:425888778e3dca86099514',
+    messagingSenderId: '791092931709',
+    projectId: 'komacrazy-d80a6',
+    databaseURL: 'https://komacrazy-d80a6-default-rtdb.firebaseio.com',
+    storageBucket: 'komacrazy-d80a6.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBuSThooinxCOEpPKsRwqOV_tCdYZYHc14',
-    appId: '1:946265384533:ios:748852291258c3d3de16dc',
-    messagingSenderId: '946265384533',
-    projectId: 'webkoma-ccf4f',
-    databaseURL: 'https://webkoma-ccf4f-default-rtdb.firebaseio.com',
-    storageBucket: 'webkoma-ccf4f.appspot.com',
-    iosClientId: '946265384533-cpsknre7eghjfq6gtgbqgjlt5qlu76vm.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBH81XePqCl2MYZLjrX1ua5Nn9c60EtKF4',
+    appId: '1:791092931709:ios:c4e5a1fcaa7c5888099514',
+    messagingSenderId: '791092931709',
+    projectId: 'komacrazy-d80a6',
+    databaseURL: 'https://komacrazy-d80a6-default-rtdb.firebaseio.com',
+    storageBucket: 'komacrazy-d80a6.appspot.com',
+    iosClientId: '791092931709-c2as151ffvcsilob0a4h1ks3dj98ecj5.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterApplication1',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBuSThooinxCOEpPKsRwqOV_tCdYZYHc14',
-    appId: '1:946265384533:ios:748852291258c3d3de16dc',
-    messagingSenderId: '946265384533',
-    projectId: 'webkoma-ccf4f',
-    databaseURL: 'https://webkoma-ccf4f-default-rtdb.firebaseio.com',
-    storageBucket: 'webkoma-ccf4f.appspot.com',
-    iosClientId: '946265384533-cpsknre7eghjfq6gtgbqgjlt5qlu76vm.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBH81XePqCl2MYZLjrX1ua5Nn9c60EtKF4',
+    appId: '1:791092931709:ios:c4e5a1fcaa7c5888099514',
+    messagingSenderId: '791092931709',
+    projectId: 'komacrazy-d80a6',
+    databaseURL: 'https://komacrazy-d80a6-default-rtdb.firebaseio.com',
+    storageBucket: 'komacrazy-d80a6.appspot.com',
+    iosClientId: '791092931709-c2as151ffvcsilob0a4h1ks3dj98ecj5.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterApplication1',
   );
 }

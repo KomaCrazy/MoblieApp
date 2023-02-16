@@ -15,17 +15,18 @@ class _homeState extends State<home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
-        body: Center(
-          child: Column(
-            children: [
-              Text("Home"),
-              TextButton(
-                  onPressed: () => Navigator.pushNamed(context, '/about'),
-                  child: Text("next"))
-            ],
-            mainAxisAlignment: MainAxisAlignment.center,
-          ),
-        ));
+      appBar: AppBar(),
+      body: Center(
+        child: Column(
+          children: [
+            Text("Home"),
+            TextButton(
+                onPressed: () => Navigator.pushNamed(context, '/about'),
+                child: Text("next"))
+          ],
+          mainAxisAlignment: MainAxisAlignment.center,
+        ),
+      ),
+    );
   }
 }

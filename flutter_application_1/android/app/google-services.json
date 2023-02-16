@@ -1,35 +1,42 @@
 {
   "project_info": {
-    "project_number": "946265384533",
-    "firebase_url": "https://webkoma-ccf4f-default-rtdb.firebaseio.com",
-    "project_id": "webkoma-ccf4f",
-    "storage_bucket": "webkoma-ccf4f.appspot.com"
+    "project_number": "791092931709",
+    "firebase_url": "https://komacrazy-d80a6-default-rtdb.firebaseio.com",
+    "project_id": "komacrazy-d80a6",
+    "storage_bucket": "komacrazy-d80a6.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:946265384533:android:cda30834b4a30e54de16dc",
+        "mobilesdk_app_id": "1:791092931709:android:425888778e3dca86099514",
         "android_client_info": {
           "package_name": "com.example.flutter_application_1"
         }
       },
       "oauth_client": [
         {
-          "client_id": "946265384533-tosto26nf3j97nri2euc3vcf6vdk4sat.apps.googleusercontent.com",
+          "client_id": "791092931709-9vi5r5bkg92kdir38k532fn32e6l64li.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDey5P7jbVgr76mc2QL19i7L1J0ZlxT0Sw"
+          "current_key": "AIzaSyAFZVDLwg4zIaejH_IR5vIu7yCaq6AF-vo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "946265384533-tosto26nf3j97nri2euc3vcf6vdk4sat.apps.googleusercontent.com",
+              "client_id": "791092931709-9vi5r5bkg92kdir38k532fn32e6l64li.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "791092931709-f6p68mjup7m2sn2a6q7bgot9bct5l3f1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ui1"
+              }
             }
           ]
         }
