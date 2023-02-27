@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:multigrade/componets/home.dart';
+import 'package:multigrade/componets/start.dart';
 import 'package:multigrade/style.dart';
 
 void main() {
@@ -18,7 +19,8 @@ class _MainState extends State<Main> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: const Home(),
-      theme: themStyle(),
+      // home: const start(),
+      // theme: themStyle(),
       debugShowCheckedModeBanner: false,
     );
   }

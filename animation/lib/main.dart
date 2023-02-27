@@ -1,3 +1,4 @@
+import 'package:animation/componets/dashboard.dart';
 import 'package:animation/componets/home.dart';
 import 'package:flutter/material.dart';
 
@@ -15,8 +16,13 @@ class Main extends StatefulWidget {
 class _MainState extends State<Main> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Home(),
+    return MaterialApp(
+      // home: Home(),
+      home: DashBoard(),
+
+      theme: ThemeData(
+          // brightness: Brightness.dark,
+          ),
       debugShowCheckedModeBanner: false,
     );
   }
