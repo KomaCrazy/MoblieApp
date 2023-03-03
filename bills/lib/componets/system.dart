@@ -18,6 +18,12 @@ void initFirebase() async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 }
 
+class Profile {
+  String user;
+  String name;
+  Profile({required this.user, required this.name});
+}
+
 class Register {
   String id;
   String user;
@@ -50,3 +56,17 @@ void login(user, pass) {
     querySnapshot.docs.forEach((val) {});
   });
 }
+
+void cookiecall() {
+  CollectionReference users = FirebaseFirestore.instance.collection('users');
+  users
+      .where('id', isEqualTo: cookietoken)
+      .get()
+      .then((QuerySnapshot querySnapshot) {
+    querySnapshot.docs.forEach((val) {});
+  });
+}
+
+
+// เราเรียนจบ บริหารธุรกิจมา อนุปริญา
+// ปัจจุบันกำลังเรียน comsci ใช่ : >

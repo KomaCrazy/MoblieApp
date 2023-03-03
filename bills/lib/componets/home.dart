@@ -1,3 +1,4 @@
+import 'package:bills/componets/system.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -8,10 +9,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   @override
   void initState() {
     // TODO: implement initState
+    print(cookietoken);
+    
     super.initState();
   }
 
