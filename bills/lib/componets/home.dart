@@ -1,5 +1,7 @@
-import 'package:bills/componets/system.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+
+import '../firebase_options.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -12,13 +14,25 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     // TODO: implement initState
-    print(cookietoken);
-    
+    initFirebase();
     super.initState();
+  }
+
+  void initFirebase() async {
+    print("123");
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Center(
+        child: Column(
+          children: [Text("Home")],
+        ),
+      ),
+    );
   }
 }

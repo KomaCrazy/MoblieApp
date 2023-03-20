@@ -45,27 +45,30 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyA3tFpI0HkIoQufdNYIByCpFIY0eWHO-Lc',
-    appId: '1:126701539999:web:596f07d8522944d1ef08aa',
+    appId: '1:126701539999:web:735137b8169d97ffef08aa',
     messagingSenderId: '126701539999',
     projectId: 'bills-a15ac',
     authDomain: 'bills-a15ac.firebaseapp.com',
+    databaseURL: 'https://bills-a15ac-default-rtdb.firebaseio.com',
     storageBucket: 'bills-a15ac.appspot.com',
-    measurementId: 'G-5BWZ4L4FHK',
+    measurementId: 'G-44JJ6C9SP3',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDIhMWSHmYyRf8Hmi6wzFsNjnQehQ-bNxA',
-    appId: '1:126701539999:android:e34cc8dae516a7beef08aa',
+    appId: '1:126701539999:android:8fc41e93b8ecc487ef08aa',
     messagingSenderId: '126701539999',
     projectId: 'bills-a15ac',
+    databaseURL: 'https://bills-a15ac-default-rtdb.firebaseio.com',
     storageBucket: 'bills-a15ac.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyAQaEKnYTvxGSDcqOwquAg9nvpuBlX1sNc',
-    appId: '1:126701539999:ios:37f762a436f2999def08aa',
+    appId: '1:126701539999:ios:a80acbc1824e975aef08aa',
     messagingSenderId: '126701539999',
     projectId: 'bills-a15ac',
+    databaseURL: 'https://bills-a15ac-default-rtdb.firebaseio.com',
     storageBucket: 'bills-a15ac.appspot.com',
     iosClientId: '126701539999-bu69p64cfe2u53ra5t1gve596pb7pgil.apps.googleusercontent.com',
     iosBundleId: 'com.example.bills',
@@ -73,9 +76,10 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyAQaEKnYTvxGSDcqOwquAg9nvpuBlX1sNc',
-    appId: '1:126701539999:ios:37f762a436f2999def08aa',
+    appId: '1:126701539999:ios:a80acbc1824e975aef08aa',
     messagingSenderId: '126701539999',
     projectId: 'bills-a15ac',
+    databaseURL: 'https://bills-a15ac-default-rtdb.firebaseio.com',
     storageBucket: 'bills-a15ac.appspot.com',
     iosClientId: '126701539999-bu69p64cfe2u53ra5t1gve596pb7pgil.apps.googleusercontent.com',
     iosBundleId: 'com.example.bills',

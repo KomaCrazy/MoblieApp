@@ -1,66 +1,68 @@
-import 'package:bills/componets/system.dart';
-import 'package:bills/icon.dart';
-import 'package:bills/style.dart';
+import 'package:bills/componetslib/system/firebase.dart';
 import 'package:flutter/material.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 
-class Login extends StatefulWidget {
-  const Login({super.key});
+class PageLogin extends StatefulWidget {
+  const PageLogin({super.key});
 
   @override
-  State<Login> createState() => _LoginState();
+  State<PageLogin> createState() => _PageLoginState();
 }
 
-class _LoginState extends State<Login> {
+class _PageLoginState extends State<PageLogin> {
   TextEditingController user = TextEditingController();
   TextEditingController pass = TextEditingController();
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    initFirebase();
-    super.initState();
-  }
+  bool hipass = true;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Column(mainAxisAlignment: Position.center, children: [
-          Container(
-            width: MediaQuery.of(context).size.width * 0.8,
-            child: Column(children: [
-              IconInto(w: 120, h: 120),
-              Container(
-                child: TextField(
-                    controller: user,
-                    decoration: InputDecoration(label: Text("User"))),
-              ),
-              SizedBox(height: 20),
-              Container(
-                child: TextField(
-                    controller: pass,
-                    decoration: InputDecoration(label: Text("Password"))),
-              ),
-              SizedBox(height: 20),
-              Container(
-                color: ClassColors.prired,
-                child: MaterialButton(
-                  onPressed: () {
-                    login(user.text, pass.text);
-                  },
-                  child: Text(
-                    "Log In",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
-              )
+        child: SizedBox(
+          width: MediaQuery.of(context).size.width * 0.6,
+          // color: Colors.amber,
+          child: Column(children: [
+            const SizedBox(height: 40),
+            Row(children: [
+              Column(children: [
+                Text("Sign In",
+                    style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold))
+              ])
             ]),
-          )
-        ]),
+            Container(
+                child: Row(children: [
+              Column(children: [
+                Text("New Experience"),
+              ])
+            ])),
+            Container(
+                child: Row(children: [
+              Column(children: [Text("for Easy check Debtor")])
+            ])),
+            TextField(
+              controller: user,
+              decoration: InputDecoration(label: Text("User")),
+            ),
+            TextField(
+              controller: pass,
+              obscureText: hipass,
+              decoration: InputDecoration(
+                  label: Text("Password"),
+                  suffixIcon: IconButton(
+                      onPressed: () => setState(() {
+                            hipass = !hipass;
+                          }),
+                      icon: hipass
+                          ? Icon(Icons.visibility_off)
+                          : Icon(Icons.visibility))),
+            ),
+            SizedBox(height: 10),
+            ElevatedButton(
+                onPressed: () {
+                  login(user.text, pass.text);
+                },
+                child: Text("Log In"))
+          ]),
+        ),
       ),
     );
   }

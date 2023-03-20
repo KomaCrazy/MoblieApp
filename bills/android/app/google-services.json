@@ -1,13 +1,14 @@
 {
   "project_info": {
     "project_number": "126701539999",
+    "firebase_url": "https://bills-a15ac-default-rtdb.firebaseio.com",
     "project_id": "bills-a15ac",
     "storage_bucket": "bills-a15ac.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:126701539999:android:e34cc8dae516a7beef08aa",
+        "mobilesdk_app_id": "1:126701539999:android:8fc41e93b8ecc487ef08aa",
         "android_client_info": {
           "package_name": "com.example.bills"
         }
@@ -29,6 +30,13 @@
             {
               "client_id": "126701539999-ui5jj96gfcic9kb13j93plsicsibnk39.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "126701539999-6k207jvki99202kklg5r6ggjl3u85q10.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.testfirebase"
+              }
             }
           ]
         }

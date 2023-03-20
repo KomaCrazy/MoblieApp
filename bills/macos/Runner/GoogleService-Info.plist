@@ -29,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:126701539999:ios:37f762a436f2999def08aa</string>
+	<string>1:126701539999:ios:a80acbc1824e975aef08aa</string>
+	<key>DATABASE_URL</key>
+	<string>https://bills-a15ac-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>
