@@ -18,3 +18,11 @@ class _AlertState extends State<Alert> {
     );
   }
 }
+
+class ColorClass {
+  static Color purple = Color(0xffF0EFFF);
+  static Color purple2 = Color(0xffA7A3FF);
+  static Color purple3 = Color(0xff4D47C3);
+
+  //
+}
